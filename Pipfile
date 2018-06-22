@@ -8,6 +8,8 @@ Flask = "*"
 pylint = "*"
 Flask-WTF = "*"
 flask-wtf = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
 
 [dev-packages]
 pylint = "*"
