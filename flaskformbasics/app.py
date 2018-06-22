@@ -6,9 +6,11 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'mysecretkey'
 
+
 class InfoForm(FlaskForm):
     breed = StringField("What Breed are you?")
     submit = SubmitField('Submit')
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -19,6 +21,7 @@ def index():
         breed = form.breed.data
         form.breed.data = ''
     return render_template('index.html', form=form, breed=breed)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
