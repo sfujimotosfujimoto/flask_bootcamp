@@ -11,7 +11,7 @@ app.config['SECRET_KEY'] = 'mysecret'
 # === SQL DATABASE SECTION ===============================
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + \
-    os.path.join(basedir, 'database.sqlite')
+                                        os.path.join(basedir, 'database.sqlite')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -50,6 +50,7 @@ class Owner(db.Model):
     def __repr__(self):
         return f"Owner Name: {self.name}"
 
+
 # === VIEW FUNCTIONS
 
 
@@ -87,7 +88,7 @@ def add_pup():
 
         return redirect(url_for('list_pup'))
 
-    return render_template('add.html', form=form)
+    return render_template('add_owner.html', form=form)
 
 
 @app.route('/list')
