@@ -10,6 +10,9 @@ Flask-WTF = "*"
 flask-wtf = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
+flask-bcrypt = "*"
+werkzeug = "*"
+flask-login = "*"
 
 [dev-packages]
 pylint = "*"
