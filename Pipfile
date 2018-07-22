@@ -13,6 +13,9 @@ flask-migrate = "*"
 flask-bcrypt = "*"
 werkzeug = "*"
 flask-login = "*"
+flask = "*"
+wtforms = "*"
+flask-dance = "*"
 
 [dev-packages]
 pylint = "*"

@@ -15,7 +15,7 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 # print(basedir)
 upload_path = os.path.join(basedir, "files")
-# print(upload_path)
+# print(upvoad_path)
 UPLOAD_FOLDER = upload_path
 ALLOWED_EXTENSIONS = set(["csv", "jpg"])
 
@@ -99,4 +99,5 @@ def uploaded_file(filename):
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0')
+   app.run(host='0.0.0.0')
+
