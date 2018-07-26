@@ -1,25 +1,14 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
 [packages]
-Flask = "*"
-pylint = "*"
-Flask-WTF = "*"
-flask-wtf = "*"
-flask-sqlalchemy = "*"
-flask-migrate = "*"
-flask-bcrypt = "*"
-werkzeug = "*"
-flask-login = "*"
 flask = "*"
-wtforms = "*"
-flask-dance = "*"
 
 [dev-packages]
 pylint = "*"
 "autopep8" = "*"
 
 [requires]
-python_version = "3.6"
+python_version = "3.7"
